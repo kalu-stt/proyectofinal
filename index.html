@@ -6,13 +6,43 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--etiqueta de responsaive --> 
         <title>Fabrica de pasta|BEL MANGIARE</title>
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" href="./css/estilos.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="./css/estilos.css">        
         <script src="https://kit.fontawesome.com/54eabdff23.js" crossorigin="anonymous"></script>
         
-
     </head>
     <body><!-- el body es la etiqueta que contiene la parte principal de la pagina digamos que es el conenido principal que ve la gente la entrar--> 
-        <header>
+        <header class="position-sticky top-0 z-3">
+            <nav class="navbar navbar-expand-lg bgcolornav bgcolornav" data-bs-theme="dark" >
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="index.html"> <img src="../fabricadepastas/assets/img/LOGOfabricadepastas.png" alt="logo en rojo de la fabrica de pastas" width="70px"></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0  w-100 justify-content-end">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./pages/productos.html">Productos</a>
+                      </li>
+                      <li>
+                        <a class="nav-link" href="pages/sucursales.html">Sucursales</a>
+                      </li>
+                      <li>
+                        <a class="nav-link" href="../fabricadepastas/pages/nosotros.html">Nosotros</a>
+                      </li>
+                      <li>
+                        <a class="nav-link" href="../fabricadepastas/pages/contacto.html">Contacto</a>
+                      </li>
+                    </ul>
+                
+                  </div>
+                </div>
+              </nav>
+        </header>
+  <!--<header>
             <img src="./assets/img/fabrica de pasta rojo.jpeg" alt="logo de la empresa de color rojo con las letras en azul y un puñado de pastas" width="100px"> 
             <!-- etiqueta multimedia para que se vean las imagenes o logos en nuestra web
              scr es el aributo donde va la direccion de la imagen, enace relativo o absoluto
@@ -21,13 +51,13 @@
              alt= texto  alternativo, la descripcion de la imagen  para darle accesibilidad a las personas no videntes
              width=ancho de la imagen 
              height es la altura de la imagen--> 
-             <nav><!--entiqueta de navegacion -->
-                <!--lista desordenada -->  
-                <ul>
+             <!--<nav>entiqueta de navegacion -->
+                <!--lista desordenada   
+                <ul>-->
                     <!--lista items li --> 
                     <!--enlace relativo: me muevo dentro del mismo sitio web
                     enlace absoluto me muevo a otro sitio web
-                    enlace interno me muevo dentro de la misma pagina donde estoy parado para otro sector -->
+                    enlace interno me muevo dentro de la misma pagina donde estoy parado para otro sector 
                     <li>
                         <a href="index.html">inicio</a>
                     </li>
@@ -46,7 +76,7 @@
                 </ul>
 
              </nav>
-            </header>
+            </header> -->
             <main>
                 <!--la imagen del fondo  va aca con css --> 
             <!-- etiqueta contenedora que separa en secciones el contenido, es una etiqueta semantica--> 
@@ -159,5 +189,6 @@
                     Todos los logos, productos, marcas y nombres aqui utilizados son propiedad registrada.
                     </p>
             </footer>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     </body>
 </html>
