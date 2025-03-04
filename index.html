@@ -11,9 +11,10 @@
         <script src="https://kit.fontawesome.com/54eabdff23.js" crossorigin="anonymous"></script>
         
     </head>
-    <body><!-- el body es la etiqueta que contiene la parte principal de la pagina digamos que es el conenido principal que ve la gente la entrar--> 
+    <body class="d-flex flex-column min-vh-100">
+        <!-- el body es la etiqueta que contiene la parte principal de la pagina digamos que es el conenido principal que ve la gente la entrar--> 
         <header class="position-sticky top-0 z-3">
-            <nav class="navbar navbar-expand-lg bgcolornav bgcolornav" data-bs-theme="dark" >
+            <nav class="navbar navbar-expand-lg bgcolornav bgcolornav">
                 <div class="container-fluid">
                   <a class="navbar-brand" href="index.html"> <img src="../fabricadepastas/assets/img/LOGOfabricadepastas.png" alt="logo en rojo de la fabrica de pastas" width="70px"></a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,153 +43,175 @@
                 </div>
               </nav>
         </header>
-  <!--<header>
-            <img src="./assets/img/fabrica de pasta rojo.jpeg" alt="logo de la empresa de color rojo con las letras en azul y un puñado de pastas" width="100px"> 
-            <!-- etiqueta multimedia para que se vean las imagenes o logos en nuestra web
-             scr es el aributo donde va la direccion de la imagen, enace relativo o absoluto
-             absoluto: la imagen esta en internet y en otro servidor 
-             relativo: la imagen esta dentro de nuestro proyecto, la imagen va a ir dentro de la caprpeta asset/img
-             alt= texto  alternativo, la descripcion de la imagen  para darle accesibilidad a las personas no videntes
-             width=ancho de la imagen 
-             height es la altura de la imagen--> 
-             <!--<nav>entiqueta de navegacion -->
-                <!--lista desordenada   
-                <ul>-->
-                    <!--lista items li --> 
-                    <!--enlace relativo: me muevo dentro del mismo sitio web
-                    enlace absoluto me muevo a otro sitio web
-                    enlace interno me muevo dentro de la misma pagina donde estoy parado para otro sector 
-                    <li>
-                        <a href="index.html">inicio</a>
-                    </li>
-                    <li>
-                        <a href="./pages/productos.html"> Productos</a>
-                    </li>
-                    <li>
-                        <a href="./pages/sucursales.html">Sucursales</a>
-                    </li>
-                    <li>
-                        <a href="./pages/nosotros.html">Nosotros</a>
-                    </li>
-                    <li>
-                        <a href="./pages/contacto.html">Contactos</a>
-                    </li>
-                </ul>
-
-             </nav>
-            </header> -->
             <main>
-                <!--la imagen del fondo  va aca con css --> 
-            <!-- etiqueta contenedora que separa en secciones el contenido, es una etiqueta semantica--> 
-             <section class="Sucursalesseccionindex">
-                <h1 class="titulo">BEL MANGEARE</h1>
-                <p>La mejor pasta de todo Montevideo</p>
-                <p>la unica que siempre tiene sabor a casa</p>
-                <a class="botton" href="./pages/sucursales.html">Encontranos</a><!--la estetica del boton se la doy luego con el CSS no te mueras por el toc todavia jeje --> 
-                
-             </section>
-             <section class="seleccionNuestrosproductosindex">
-                <h2>Tu pasta preferida, a la vuelta de la esquina</h2>
-                <h2>La pasta mas natural</h2>
-                <a class="botton" href="">Entrar</a><!--PRESTAR MAS ATENCION CON LOS ENLACES Y ARCHIVOS --> 
-                <img src="../fabricadepastas/assets/img/con nombre en el medio1.jpeg" alt="unamiagen de un plato de salsa recien preparado">
-                <img src="../fabricadepastas/assets/img/connombre2.jpeg" alt="plato de pasta con salsa ">
-                <img src="../fabricadepastas/assets/img/connombre3.jpeg" alt="imagen con plato de pasta">
-                <img src="../fabricadepastas/assets/img/contexto.jpeg" alt="imagen de un plato de pasta humeante recien preparado">
-                <img src="../fabricadepastas/assets/img/WhatsApp Image 2025-01-31 at 22.12.35 (1).jpeg" alt="masa de nioquis">
-             </section>
-             <section class="platosindex">
-                <div class="preparapastaindex">
-                    <p>Conviertete en todo un experto</p>
-                    <h2>Prepara la mejor pasta con salsa de tomate</h2>
-                    <a class="botton" href="./pages/nosotros.html#prepararespagueti">VER</a>
-                    <!-- cuando creamos un ancla para movernos a otra parte de la web, pero queremos que se vea una parte en esepsifico podemos utilizar esta opcion con el # para moverlo a ese id en especifico --> 
+                      <section class="w-100 min-vh-75 d-flex flex-column justify-content-center align-items-center text-white text-center" style="background-image: url(../fabricadepastas/assets/img/imagenprincipal4.jpeg); background-size: cover; background-position: center;">
+                    <h1 class="mt-0 mb-5 fs-1 fw-bold w-100 text-start">BEL MANGIARE</h1>
+                    <p class="fs-2 w-100">La mejor pasta de todo Montevideo</p>
+                    <p class="fs-2 w-100">La única que siempre tiene sabor a casa</p>
+                    <a class="btn btn-primary btn-lg mb-2" href="./pages/sucursales.html">Encontranos</a>
+                </section>
+        
+            <!-- Carrusel  -->
+            <section class="w-100 d-flex justify-content-center my-4">
+                <div id="carouselExampleInterval" class="carousel slide w-75" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="10000">
+                            <img src="../fabricadepastas/assets/img/carrosel2.jpeg" class="d-block w-100 img-fluid" style="max-height:500px; object-fit: cover;" alt="plato de pasta con salsa">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="../fabricadepastas/assets/img/como_hacer_salsa_de_tomate_para_pasta_50878_600.webp" class="d-block w-100 img-fluid" style="max-height: 500px; object-fit: cover;" alt="imagen con plato de pasta">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../fabricadepastas/assets/img/spaghetti-569067_640.jpg" class="d-block w-100 img-fluid" style="max-height: 500px; object-fit: cover;" alt="platillo de pasta humeante recién preparado">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../fabricadepastas/assets/img/ravilarga.jpeg" class="d-block w-100 img-fluid" style="max-height: 500px; object-fit: cover;" alt="platillo de pasta recién preparado">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </button>
                 </div>
-                <div class="espaguetisconsalsa">
-                    <p>Las mejores opciones</p>
-                    <h2>Para saciar tu hambre</h2>
-                    <a class="botton" href="./pages/productos.html#Nuestras mejoresopcionesparatumejorcomida">VER</a>
-                </div>
-             </section>
-             <section class="salsatomate">
-                <h2>Espaguetis en salsa de tomate | Pasta de espagueti con salsa roja </h2>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/ErEy38dcCVg?si=nomL1mxUe3Oo5n8r" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-             </section>
-             <section class="seccionopinionclientes">
-                <h2>Conoce las opiniones de nuestros clientes:</h2>
-                <div>
-                    <img src="../fabricadepastas/assets/img/digital_wellbeing_24dp_UNDEFINED_FILL0_wght400_GRAD0_opsz24.png" alt="imagen del cliente saisfecho" width="140px">
-                    <h3>Alvaro Bentancor:</h3>
-                    <p>Muy ricas pastas y slasas.Buena antencion y precios acordes</p>
-                </div>
-                <div>
-                    <img src="../fabricadepastas/assets/img/digital_wellbeing_24dp_UNDEFINED_FILL0_wght400_GRAD0_opsz24.png" alt="imagen del cliente saisfecho" width="140px">
-                    <h3>Fernando Yausieri:</h3>
-                    <p>Todo muy rico, muy respetuoso el deliveri</p>
-                </div>
-                <div>
-                    <img src="../fabricadepastas/assets/img/digital_wellbeing_24dp_UNDEFINED_FILL0_wght400_GRAD0_opsz24.png" alt="imagen del cliente saisfecho" width="140px">
-                    <h3>Oscar Carbajal:</h3>
-                    <p>MUY RIKO TODO EXELENTE!!!!</p>
-                </div>
-                <div>
-                    <img src="../fabricadepastas/assets/img/digital_wellbeing_24dp_UNDEFINED_FILL0_wght400_GRAD0_opsz24.png" alt="imagen del cliente saisfecho"  width="140px">
-                    <h3>Mary Sanchez:</h3>
-                    <p>De 10 todo muy riko no pueden dejar de probarlo.</p>
-                </div>
-             </section>
-            </main>
-           
-            <footer>
-                <img src="./assets/img/fabrica de pasta rojo.jpeg" alt="logo de la empresa de color rojo con las letras en azul y un puñado de pastas" width="100px"> 
-                <div class="mover">
+            </section>
+            <section class="container my-5">
+                <div class="row">
+                    <!-- Primera tarjeta de pasta -->
+                    <div class="col-lg-6 mb-4">
+                        <div class="card h-100 text-center" style="background-image: url(../fabricadepastas/assets/img/plato4.jpeg); background-size: cover; background-position: center;">
+                            <div class="card-body d-flex flex-column justify-content-center align-items-center text-white">
+                                <p class="fs-3 text-uppercase fw-bold text-white">Conviertete en todo un experto</p>
+                                <h2 class="fs-4 text-white text-center">Prepara la mejor pasta con salsa de tomate</h2>
+                                <a class="btn btn-primary mt-3" href="./pages/nosotros.html#prepararespagueti">VER</a>
+                            </div>
+                        </div>
+                    </div>
             
-                    <h3>Contenidos</h3>
-                    <ul>
-                     <li>
-                        <a href="index.html">inicio</a>
-                    </li>
-                    <li>
-                        <a href="./pages/productos.html"> Productos</a>
-                    </li>
-                    <li>
-                        <a href="./pages/sucursales.html">Sucursales</a>
-                    </li>
-                    <li>
-                        <a href="./pages/nosotros.html">Nosotros</a>
-                    </li>
-                    <li>
-                        <a href="./pages/contacto.html">Contactos</a>
-                    </li>
-                </ul>
+                    <!-- Segunda tarjeta de opciones de espaguetis -->
+                    <div class="col-lg-6 mb-4">
+                        <div class="card h-100 text-center" style="background-image: url(../fabricadepastas/assets/img/salsa.jpeg); background-size: cover; background-position: center;">
+                            <div class="card-body d-flex flex-column justify-content-center align-items-center text-white">
+                                <p class="fs-3 text-uppercase fw-bold text-white">Las mejores opciones</p>
+                                <h2 class="fs-4 text-white text-center">Para saciar tu hambre</h2>
+                                <a class="btn btn-primary mt-3" href="./pages/productos.html#Nuestras mejoresopcionesparatumejorcomida">VER</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+             <<section class="salsatomate d-flex flex-column justify-content-center align-items-center">
+                <h2 class="text-center">Espaguetis en salsa de tomate | Pasta de espagueti con salsa roja </h2>
+                <iframe class="text-center" width="560" height="315" src="https://www.youtube.com/embed/ErEy38dcCVg?si=nomL1mxUe3Oo5n8r" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </section>
+            <!-- d-flex flex-column: Esto convierte la sección en un contenedor flexible en columna, lo que permite centrar los elementos en la vertical y horizontal.
+            justify-content-center: Centra los elementos hijos en el eje vertical.
+            align-items-center: Centra los elementos hijos en el eje horizontal.
+             text-center: Asegura que el texto en el h2 esté centrado. --> 
+             <section class="container my-5">
+                <h2 class="text-center mb-4">Conoce las opiniones de nuestros clientes:</h2>
+                <div class="row">
+                    <!-- Primer comentario -->
+                    <div class="col-md-6 col-lg-3 mb-4">
+                        <div class="card text-center">
+                            <div class="card-body" style="background-color:rgb(252, 239, 165)">
+                                <img src="../fabricadepastas/assets/img/clienteperfilh1.jpg" alt="imagen del cliente satisfecha" class="rounded-circle mb-3" width="100px">
+                                <h3 class="card-title">Alvaro Bentancor</h3>
+                                <p class="card-text text-muted text-center">"Muy ricas pastas y salsas. Buena atención y precios acordes."</p>
+                                <footer class="blockquote-footer text-white bgcolornav">Cliente satisfecho</footer>
+                            </div>
+                        </div>
+                    </div>
+            
+                          <!-- Segundo comentario -->
+        <div class="col-md-6 col-lg-3 mb-4">
+            <div class="card text-center">
+                <div class="card-body" style="background-color:rgb(252, 239, 165)">
+                    <img src="../fabricadepastas/assets/img/clienteperfilh2.jpg" alt="imagen del cliente satisfecho" class="rounded-circle mb-3" width="100px">
+                    <h3 class="card-title">Fernando Yausieri</h3>
+                    <p class="card-text colordecartas text-center">"Todo muy rico, muy respetuoso el delivery."</p>
+                    <footer class="blockquote-footer text-white bgcolornav">Cliente satisfecho</footer>
+                </div>
             </div>
-                ><!--NO COPIAR Y PEGAR, CAMBIAR EN OTRO HML, Y DE AHI SI SE PUEDE COPIAR, REVISAR QUE LOS NOMBRES COINCIADAN Y PORNERLOS EN EL MISMO ORDEN -->     
-                <div>
-                   <h3>Subscribite a nuestras NewsLatter</h3> 
-                   <form action="">
-                    <input type="email" placeholder="Email" id="emailsuscripcion">
-                    <input type="submit"
-                    value="Subscribirse" id="Subscribirse">
-                   </form>
+        </div>
+<!--Imagen como círculo (rounded-circle): Las imágenes de los clientes ahora tienen un borde redondeado para darles el aspecto típico de un avatar en comentarios o testimonios.
+Texto de los comentarios: Los textos de las opiniones están dentro de un bloque de cita usando blockquote-footer, lo que ayuda a darle un estilo más representativo de un comentario. --> 
+        <!-- Tercer comentario -->
+        <div class="col-md-6 col-lg-3 mb-4">
+            <div class="card text-center">
+                <div class="card-body" style="background-color:rgb(252, 239, 165)">
+                    <img src="../fabricadepastas/assets/img/clienteperfilm3.jpg" alt="imagen del cliente satisfecho" class="rounded-circle mb-3" width="100px">
+                    <h3 class="card-title">Maria Carbajal</h3>
+                    <p class="card-text colordecartas text-center">"¡MUY RICO TODO EXCELENTE!!!!"</p>
+                    <footer class="blockquote-footer text-white bgcolornav">Cliente satisfecho</footer>
                 </div>
-                <div><!-- recordatorio, no dejar los enlaces pegados sin anclas, RECORDAR PONER LAS ANCLAS--> 
-                    <h3>CONTACTATE CON NOSTROS</h3>
-                    <a href="https://www.instagram.com/pastasbelmangiareuy/?hl=es">Instagram</a>
-                    <i class="fa-brands fa-instagram"></i>
-                    <a href="https://www.facebook.com/fabricadepastasbelmangiare/">Facebook</a>
-                    <i class="fa-brands fa-facebook"></i>
-                    <a href="https://web.whatsapp.com/"> whatsapp</a>
-                    <i class="fa-brands fa-whatsapp"></i>
-                    <a href="">Telefono: 2216 7512 </a>
-                    <i class="fa-solid fa-phone"></i>
+            </div>
+        </div>
 
-                    
+        <!-- Cuarto comentario -->
+        <div class="col-md-6 col-lg-3 mb-4">
+            <div class="card text-center">
+                <div class="card-body" style="background-color:rgb(252, 239, 165)">
+                    <img src="../fabricadepastas/assets/img/clienteperfilm4.jpg" alt="imagen del cliente satisfecho" class="rounded-circle mb-3" width="100px">
+                    <h3 class="card-title">Mary Sanchez</h3>
+                    <p class="card-text text-center colordecartas">"De 10 todo muy rico, no pueden dejar de probarlo."</p>
+                    <footer class="blockquote-footer text-white bgcolornav">Cliente satisfecho</footer>
                 </div>
-                <hr>
-                <p>© Copyright 2025 Bel Mangeare - Todos los derechos reservados.
-                    Todos los logos, productos, marcas y nombres aqui utilizados son propiedad registrada.
-                    </p>
+            </div>
+        </div>
+    </div>
+  </section>
+ </main>
+           <footer>
+                <section class="container mt-3">
+                    <div class="row">
+                        <!-- Columna de Contenidos, centrada -->
+                        <div class="col-md-4 text-center">
+                            <img src="./assets/img/fabrica de pasta rojo.jpeg" alt="logo de la empresa de color rojo con las letras en azul y un puñado de pastas" width="100px">
+                            <div class="mover mt-4">
+                                <h3 class="text-white">Contenidos</h3>
+                                <ul class="list-unstyled text-center text-white">
+                                    <li><a class="text-white text-center" href="index.html">Inicio</a></li>
+                                    <li><a class="text-white text-center" href="./pages/productos.html">Productos</a></li>
+                                    <li><a class="text-white text-center" href="./pages/sucursales.html">Sucursales</a></li>
+                                    <li><a class="text-white text-center" href="./pages/nosotros.html">Nosotros</a></li>
+                                    <li><a class="text-white text-center" href="./pages/contacto.html">Contactos</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                
+                        <!-- Columna de Suscripción, centrada -->
+                        <div class="col-md-4 text-center">
+                            <h3 class="text-white">Suscríbete a nuestras NewsLatter</h3>
+                            <form action="">
+                                <input type="email" placeholder="Email" id="emailsuscripcion" class="form-control mb-3">
+                                <input type="submit" value="Suscribirse" id="Subscribirse" class="btn btn-primary">
+                            </form>
+                        </div>
+                
+                        <!-- Columna de Contactos, alineada a la izquierda -->
+                        <div class="col-md-4">
+                            <h3 class="text-white text-center">Contactate con nosotros</h3>
+                            <ul class="list-unstyled text-white text-center">
+                                <li><a class="text-white text-center" href="https://www.instagram.com/pastasbelmangiareuy/?hl=es">Instagram</a> <i class="fa-brands fa-instagram"></i></li>
+                                <li><a class="text-white text-center" href="https://www.facebook.com/fabricadepastasbelmangiare/">Facebook</a> <i class="fa-brands fa-facebook"></i></li>
+                                <li><a class="text-white text-center" href="https://web.whatsapp.com/">WhatsApp</a> <i class="fa-brands fa-whatsapp"></i></li>
+                                <li><a class="text-white text-center" href="tel">Teléfono: 2216 7512</a> <i class="fa-solid fa-phone"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                
+                    <hr>
+                
+                    <p class="text-center text-white">© Copyright 2025 Bel Mangiare - Todos los derechos reservados.
+                        Todos los logos, productos, marcas y nombres aquí utilizados son propiedad registrada.</p>
+                </section>
+                
             </footer>
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    </body>
+         </body>
 </html>

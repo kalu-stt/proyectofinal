@@ -7,7 +7,16 @@
     padding: 0;
     /*box-sizing: border-box;*/
 }
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
 body{ /*valores del body*/
+    
     font-family: "Cormorant", serif;
    /* padding: 10px;*/
 
@@ -28,10 +37,16 @@ h2{
     text-align: center;
 
 }
+.colordecartas{
+    color: black;
+}
+.navbar-expand-lg .navbar-nav .nav-link{
+    color: rgb(245, 245, 245);
+}
 
 .botton{
-   
-        padding: 10px;
+        margin-top: 20px;
+        padding: 20px;
         text-decoration: none;
         display: inline-block;
         color: blue;
@@ -42,54 +57,24 @@ h2{
 .navbar-collapse {
     justify-content: flex-end;
 }
+/*header{
+    background-color:rgba(207, 196, 133, 0.911)
+} */
 
-footer{
-    background-color: orangered;
+footer{ 
+   width: 100%;
+   background-color: rgb(228, 120, 81);
 }
-/*estilos del header y del footer
- header,footer{
-    background-color:orangered;
-        padding: 10px;
-        ul{
-            list-style: none;
-        }
-        /* este vendria a ser el estilo de las anclas que estan dentro del footer pero no estan dentro del ul
-        a{
-            color: rgb(11, 11, 175);
-            text-decoration: none;
-        }
-        a{
-            text-decoration: none;
-        }
-        h2,i,p{
-        color: rgb(11, 11, 175);
-        font-weight: 600;
-        }
-        i{
-            font-size: 2rem;
-        }
-        h3{
-            margin-bottom: 10px;
-            color: blue;
-        } 
- }*//*los colores pueden cambiar en el trasncurso del proyecto*/
+
+
  .bgcolornav
  {
-    background-color:orangered;
+    background-color:rgb(228, 120, 81);
  }
-main{
-    background-color:tomato
+main{ 
+     flex: 1;
+   background-color:rgb(252, 239, 165)
 }
-
- /*estilos del main index*/
-  /*estilos del main index*/
-  .Sucursalesseccionindex{
-    background-image: url(../assets/img/preparado.jpeg);
-    height: 75vh;
-    padding: 10px;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
    
    h1{/* esto afecta al titulo*/
     text-align: center;
@@ -102,111 +87,26 @@ main{
            /* margin-top: 10px;*/
             text-decoration: none;
             display: inline-block;
-            color: blue;
-            font-size: 40px;
+            /*color: rgb(42, 246, 253);*/
             font-family: "Cormorant", serif;
             text-align:center;
             
         } 
         p{
-            color: rgb(11, 11, 175);
+           /* color: rgb(75, 72, 70);*/
             margin-top: 20px;
             padding: 30px;
-            font-size: 3rem;
             text-align: right;
             font-family: "Cormorant", serif;
             
         }
 
-.Sucursalesseccionindex{
-    height: 80vh; /*baje los vh porque queria que la imagen se vea un poco mas pequeña*/
-    padding: 10px;
-    a{
-        margin-top: 30px;
-       
-    }
-/*no le puse magrin top porque queria que quede la imagen pegada a la  parte coloreada me da toc que se vea la linea blanca*/
-}
-}
-
-/*no le puse magrin top porque queria que quede la imagen pegada a la  parte coloreada me da toc que se vea la linea blanca*/
-
-/* Media query para pantallas más pequeñas (móviles) */
-@media (max-width: 767px) {
-    h1 {
-        font-size: 2.5rem; /* Ajustar el tamaño del título en pantallas pequeñas */
-    }
-    
-    .botton {
-        right: 10px;  /* Reducir el margen derecho en dispositivos móviles */
-        bottom: 10px; /* Reducir el margen inferior en dispositivos móviles */
-    }
-}
-.seleccionNuestrosproductosindex{
-    
-   /* padding: 10px;
-    margin-bottom:20px ;*/
-    background-color:orangered;
-    img{
-       /* width: 300px;*/
-    }
-    h2{
-        text-align: center;
-      /*  font-size: 50px;*/
-        font-family: "Cormorant", serif;
-        font-style: oblique;
-
-    }
-    img{
-        width: 300px;
-        text-align: center;
-    }
-}
-.platosindex{
-    text-align: center;
-    .preparapastaindex{
-        background-image: url(../assets/img/como_hacer_salsa_de_tomate_para_pasta_50878_600.webp);
-        background-position: center;
-        background-size: cover;
-      /*  width: 48%;
-        padding: 30px;
-        margin-top: 10px;
-        font-size: 30px;*/
-        color: rgb(239, 239, 241);
-        font-weight: bold
-    } 
-    p,h2{
-        text-align: center;
-        font-size: 4rem;
-        font-family: "Cormorant", serif;
-        font-style: oblique;
-        color:rgb(52, 130, 202);
         
-    }
-} /*no me di cuenta de ahorrar codigo, lo vi con el after y me olvide mala mia de todas formas creo que quedo funcional al menos por ahora*/
-.espaguetisconsalsa{
-   
-    text-align: center;
-    background-image: url(../assets/img/imagestomate.jpg);
-    background-position: center;
-    background-size: cover;
-  /*  width: 48%;
-    height: 400px;
-    padding: 10px;
-    margin-top: 30px;
-    text-align:center;
-    font-size: 30px;
-    p,h2{
-    font-size: 4rem;*/
-    font-family: "Cormorant", serif;
-    font-style: oblique;
-    color:rgb(52, 130, 202);
-    font-weight: bold
-
-} 
-
-    
-
-
-      
-    
+        .diseñodetabla th
+         {
+            background-color: rgb(252, 239, 165);
+        }
+        .diseñodetabla td{
+             background-color: rgb(252, 239, 165);
+        }
+       
