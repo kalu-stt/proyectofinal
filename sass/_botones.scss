@@ -1,0 +1,26 @@
+/* Estilos para los botones */
+.btn {
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 10px 20px; /* Espaciado interno */
+    transition: background-color 0.3s ease-in-out; /* Transición */
+}
+
+/* Botón primario */
+.btn-primario {
+    color:$color-nav;
+    background-color:$color-boton;
+}
+
+.btn-primario:hover {
+    background-color:$colorazulclaroboton; /* Fondo oscuro para el raton mouse */
+}
+
+/* Botón secundario */
+.btn-secundario {
+    background-color:$colorgrisboton; /* Color de fondo */
+    color: white; /* Color de texto */
+}
+
+.btn-secundario:hover {
+    background-color:$grisboton2; /* Fondo más oscuro cuando pasa el raton*/
+}

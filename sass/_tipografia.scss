@@ -1,0 +1,32 @@
+body { 
+    font-family: $fuente-body;
+}
+
+h1, h2 {
+    text-align: center;
+    color: rgb(26, 2, 240);
+}
+
+h1 {
+    font-family: $fuente-numero2;
+    font-size: 4rem;
+    padding: 10px;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+p {
+    margin-top: 20px;
+    padding: 30px;
+    text-align: right;
+    font-family: $fuente-body;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    font-family: $fuente-body;
+    text-align: center;
+}

@@ -1,112 +1,120 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Courgette&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund+Guides&display=swap');
-/*reseteo*/
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Courgette&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund+Guides&display=swap");
+.colordecartas {
+  color: black;
+}
 
-*{
-    margin: 0;
-    padding: 0;
-    /*box-sizing: border-box;*/
+/* Anidación en la barra de navegación */
+.navbar-expand-lg .navbar-nav .nav-link {
+  color: rgb(245, 245, 245);
+}
+
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
+/* Anidación en la tabla */
+.diseñodetabla th, .diseñodetabla td {
+  background-color: rgb(252, 239, 165);
+}
+
+.bgcolornav {
+  background-color: rgb(228, 120, 81);
+}
+
+.texto-centrado {
+  text-align: center;
+}
+
+.margen-arriba {
+  margin-top: 20px;
+}
+
+.padding-30 {
+  padding: 30px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
 }
 
 html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-}
-body{ /*valores del body*/
-    
-    font-family: "Cormorant", serif;
-   /* padding: 10px;*/
-
-}
-h1 {/*valores de las etiquetas h1*/
-    font-family: "Playwrite DE Grund Guides", serif;
-   /*  font-size: 3rem;/*3=16px*/
-    color: rgb(26, 2, 240) !important;
-   /* margin-bottom: 40px;*/
-    text-align: center;
-   /* padding-top: 20px;*/
-}
-h2{
-    font-size: 2rem;/*2/16px*/
-    color: rgb(26, 2, 240);
-   /* margin-top: 20px;*/
-   /* margin-bottom: 20px;*/
-    text-align: center;
-
-}
-.colordecartas{
-    color: black;
-}
-.navbar-expand-lg .navbar-nav .nav-link{
-    color: rgb(245, 245, 245);
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
 }
 
-.botton{
-        margin-top: 20px;
-        padding: 20px;
-        text-decoration: none;
-        display: inline-block;
-        color: blue;
-        border: 1px solid blue;
-        text-align:center;}
-    
-
-.navbar-collapse {
-    justify-content: flex-end;
-}
-/*header{
-    background-color:rgba(207, 196, 133, 0.911)
-} */
-
-footer{ 
-   width: 100%;
-   background-color: rgb(228, 120, 81);
+body {
+  font-family: "Cormorant", serif;
 }
 
-
- .bgcolornav
- {
-    background-color:rgb(228, 120, 81);
- }
-main{ 
-     flex: 1;
-   background-color:rgb(252, 239, 165)
+h1, h2 {
+  text-align: center;
+  color: rgb(26, 2, 240);
 }
-   
-   h1{/* esto afecta al titulo*/
-    text-align: center;
-    font-family: "Playwrite DE Grund Guides", serif;
-    color: rgb(26, 2, 240);
-   font-size: 4rem;
-    padding: 10px;
-   }
-    a{
-           /* margin-top: 10px;*/
-            text-decoration: none;
-            display: inline-block;
-            /*color: rgb(42, 246, 253);*/
-            font-family: "Cormorant", serif;
-            text-align:center;
-            
-        } 
-        p{
-           /* color: rgb(75, 72, 70);*/
-            margin-top: 20px;
-            padding: 30px;
-            text-align: right;
-            font-family: "Cormorant", serif;
-            
-        }
 
-        
-        .diseñodetabla th
-         {
-            background-color: rgb(252, 239, 165);
-        }
-        .diseñodetabla td{
-             background-color: rgb(252, 239, 165);
-        }
-       
+h1 {
+  font-family: "Playwrite DE Grund Guides", serif;
+  font-size: 4rem;
+  padding: 10px;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+p {
+  margin-top: 20px;
+  padding: 30px;
+  text-align: right;
+  font-family: "Cormorant", serif;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  font-family: "Cormorant", serif;
+  text-align: center;
+}
+
+main {
+  flex: 1;
+  background-color: rgb(252, 239, 165);
+}
+
+footer {
+  width: 100%;
+  background-color: rgb(228, 120, 81);
+}
+
+/* Estilos para los botones */
+.btn {
+  border-radius: 8px; /* Bordes redondeados */
+  padding: 10px 20px; /* Espaciado interno */
+  transition: background-color 0.3s ease-in-out; /* Transición */
+}
+
+/* Botón primario */
+.btn-primario {
+  color: rgb(245, 245, 245);
+  background-color: blue;
+}
+
+.btn-primario:hover {
+  background-color: #0056b3; /* Fondo oscuro para el raton mouse */
+}
+
+/* Botón secundario */
+.btn-secundario {
+  background-color: #6c757d; /* Color de fondo */
+  color: white; /* Color de texto */
+}
+
+.btn-secundario:hover {
+  background-color: #5a6268; /* Fondo más oscuro cuando pasa el raton*/
+}/*# sourceMappingURL=estilos.css.map */

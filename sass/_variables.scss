@@ -1,0 +1,20 @@
+$color-cartas : black;
+$fuente-body: "Cormorant", serif;
+$color-fondo-clarito: rgb(252, 239, 165);
+$color-naranja: rgb(228, 120, 81);
+$color-nav: rgb(245, 245, 245);
+$color-boton: blue;
+$fuente-numero2: "Playwrite DE Grund Guides", serif;
+$colorazulclaroboton : #0056b3;
+$colorgrisboton: #6c757d;
+$grisboton2: #5a6268;
+
+
+$flexbox-alineacion: (
+    centro: center,
+    espacio-entre: space-between,
+    espacio-alrededor: space-around,
+    espacio-interno: space-evenly,
+    flex-start: flex-start,
+    flex-end: flex-end
+);

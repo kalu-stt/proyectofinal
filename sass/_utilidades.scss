@@ -1,0 +1,37 @@
+.colordecartas {
+    color:$color-cartas
+}
+
+/* Anidación en la barra de navegación */
+.navbar-expand-lg {
+    .navbar-nav {
+        .nav-link {
+            color:$color-nav;
+        }
+    }
+}
+
+.navbar-collapse {
+    justify-content: map-get($flexobox-alineacion,espacio-entre )
+}
+
+/* Anidación en la tabla */
+.diseñodetabla {
+    th, td {
+        background-color:$color-fondo-clarito;
+    }
+}
+.bgcolornav {
+    background-color:$color-naranja;
+}
+.texto-centrado {
+    text-align: center;
+}
+
+.margen-arriba {
+    margin-top: 20px;
+}
+
+.padding-30 {
+    padding: 30px;
+}
