@@ -1,0 +1,6 @@
+@mixin cambiar-color-fuente($color){
+    color: $color;
+}
+@mixin cambiar-color-fondo($color){
+    background-color: $color-fondo-clarito;
+}

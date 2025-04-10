@@ -35,3 +35,6 @@
 .padding-30 {
     padding: 30px;
 }
+.colordefondo{
+    @include cambiar-color-fondo($color-fondo-clarito)
+}
