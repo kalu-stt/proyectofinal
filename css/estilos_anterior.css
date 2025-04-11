@@ -37,6 +37,10 @@ h2{
     text-align: center;
 
 }
+.novisible {
+    display: none !important;  /* Esto elimina los párrafos completamente en móvil */
+  }
+
 .colordecartas{
     color: black;
 }
