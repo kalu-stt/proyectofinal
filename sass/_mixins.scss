@@ -4,3 +4,9 @@
 @mixin cambiar-color-fondo($color){
     background-color: $color-fondo-clarito;
 }
+@mixin text-shadow-strong {
+    text-shadow:
+      2px 2px 4px rgba(0, 0, 0, 0.9),
+      1 1 10px rgba(0, 0, 0, 0.7),
+      3px 3px 3px rgba(0, 0, 0, 0.8);
+  }

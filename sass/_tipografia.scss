@@ -30,3 +30,9 @@ a {
     font-family: $fuente-body;
     text-align: center;
 }
+.text-shadow {
+    text-shadow: 4px 5px 6px rgba(0, 0, 0, 0.8);
+  }
+  h1, p {
+    @include text-shadow-strong;
+  }
